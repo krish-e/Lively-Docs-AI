@@ -1,2 +1,50 @@
-# Lively-Docs-AI
-"Lively Docs AI" Command Line Interface tool boosts document understanding by AI question answering. Users input PDF URLs from local or online sources (excluding Google Drive). AI, powered by OpenAI API, generates answers using the RAG(Retrieval-Augmented Generation) frameworks via LangChain.
+# Lively Docs AI
+
+Lively Docs AI is a Command Line Interface (CLI) tool designed to enhance document understanding through AI-powered question answering. With this tool, users can upload PDF documents either from their local machine or directly from online sources. Once uploaded, they can ask questions related to the content of the document, and the AI model, powered by OpenAI API, will generate answers using Langchain's Retrieval Augmented Generation(RAG) framework.
+
+## Features
+
+- **PDF Upload:** Easily upload PDF documents from local files or online sources.
+- **Question Answering:** Ask questions related to the document content.
+- **AI-powered Responses:** Utilizes OpenAI API to generate accurate answers using the RAG framework.
+- **Document Understanding:** Enhances comprehension and information extraction from documents.
+
+## Requirements
+
+- Python 3.5 or above
+- OpenAI API Key
+- Internet Connection(for online PDF sources)
+
+## Installation
+
+1. Clone the repository:
+  
+    ```bash
+    git clone https://github.com/krish-e/Lively-Docs-AI.git
+
+2. Navigate to the project directory:
+    ```bash
+    cd Lively-Docs-AI
+
+3. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+
+4. Usage
+1. Run the CLI tool:
+    ```bash
+    python app.py
+
+3. Update a PDF document.
+4. Ask questions related to the document content.
+5. Receive AI-generated answers.
+
+
+## Credits
+
+Special thanks to OpenAI and Langchain for providing the powerful AI models and super simple frameworks used in this project.
+
+
+
+
+
