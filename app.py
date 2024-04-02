@@ -25,7 +25,8 @@ Question: {question}
 prompt = ChatPromptTemplate.from_template(template)
 
 # Replace file_path with the URL fo your document(local or online). Except google drive
-file_path = "https://pdfobject.com/pdf/sample.pdf"
+print("\nLively Docs AI")
+file_path = input("Enter document's URL(local or online source except Google Drive):\n")
 
 # Splitting Book into small chunks
 loader = PyPDFLoader(file_path)
@@ -40,8 +41,6 @@ setup = RunnableParallel(context= vector_store.as_retriever(), question=Runnable
 chain = setup | prompt | model | parser
 
 exit_keywords = ['nothing', 'no', 'exit']
-
-print("\nLively Docs AI")
 question = input("Ask any question based on your document content (reply 'exit' to end session): \n")
 while True:
     if not question.lower() in exit_keywords:
