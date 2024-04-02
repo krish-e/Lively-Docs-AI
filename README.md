@@ -4,7 +4,7 @@ Lively Docs AI is a Command Line Interface (CLI) tool designed to enhance docume
 
 ## Features
 
-- **PDF Upload:** Easily upload PDF documents from local files or online sources.
+- **PDF Upload:** Easily upload PDF documents from local files or online sources(Except Google Drive).
 - **Question Answering:** Ask questions related to the document content.
 - **AI-powered Responses:** Utilizes OpenAI API to generate accurate answers using the RAG framework.
 - **Document Understanding:** Enhances comprehension and information extraction from documents.
@@ -12,7 +12,7 @@ Lively Docs AI is a Command Line Interface (CLI) tool designed to enhance docume
 ## Requirements
 
 - Python 3.5 or above
-- OpenAI API Key
+- OpenAI API Key ([Get here](https://platform.openai.com/api-keys))
 - Internet Connection(for online PDF sources)
 
 ## Installation
@@ -30,12 +30,13 @@ Lively Docs AI is a Command Line Interface (CLI) tool designed to enhance docume
     ```bash
     pip install -r requirements.txt
 
-4. Usage
+
+## Usage
 1. Run the CLI tool:
     ```bash
     python app.py
 
-3. Update a PDF document.
+3. Give URL of a document local or online source(except Google Drive) when prompted
 4. Ask questions related to the document content.
 5. Receive AI-generated answers.
 
